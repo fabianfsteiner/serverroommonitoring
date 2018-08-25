@@ -22,7 +22,7 @@ def save_to_messages_db(cur, nowf, type, title, sms):
 		systeme = cur.fetchall()
 		for system in systeme:
 			logging.info("Saving sms in: " +system[0])
-			mdb = pymysql.connect(host=system[0], user='webuser', password='La4R2uyME78hAfn9I1pH',db='messages',autocommit=True)
+			mdb = pymysql.connect(host=system[0], user='webuser', password='t5sLhtva6Ev8xjptFpGhu2zupsy64sgTndg',db='messages',autocommit=True)
 			mcursor = mdb.cursor()
 			sql = "insert into message values ('%s', %d, '%s', '%s')" % (str(nowf),type,title, sms)
 			logging.debug(sql)
@@ -64,7 +64,7 @@ local = (([ip for ip in socket.gethostbyname_ex(socket.gethostname())[2] if not 
 #header - figure out system name
 sql = "select name from messsystem where ip = '%s';" % (local)
 try:
-	db = pymysql.connect(host='localhost', user='webuser', password='La4R2uyME78hAfn9I1pH',db='serverraum_temperaturueberwachung',autocommit=True)
+	db = pymysql.connect(host='localhost', user='webuser', password='t5sLhtva6Ev8xjptFpGhu2zupsy64sgTndg',db='serverraum_temperaturueberwachung',autocommit=True)
 	cursor = db.cursor()
 	logging.info("Connected to database")
 	logging.debug(sql)
@@ -115,7 +115,7 @@ while True:
 			title = ""
 			logging.info("try connecting to db")
 			try:
-				connection = pymysql.connect(host='localhost', user='webuser', password='La4R2uyME78hAfn9I1pH',db='serverraum_temperaturueberwachung',autocommit=True)
+				connection = pymysql.connect(host='localhost', user='webuser', password='t5sLhtva6Ev8xjptFpGhu2zupsy64sgTndg',db='serverraum_temperaturueberwachung',autocommit=True)
 			except Exception as e:
 				logging.error(e)
 				continue

@@ -44,7 +44,7 @@ local = (([ip for ip in socket.gethostbyname_ex(socket.gethostname())[2] if not 
 #header - figure out system name
 sql = "select name from messsystem where ip = '%s';" % (local)
 try:
-	db = pymysql.connect(host='localhost', user='webuser', password='La4R2uyME78hAfn9I1pH',db='serverraum_temperaturueberwachung',autocommit=True)
+	db = pymysql.connect(host='localhost', user='webuser', password='t5sLhtva6Ev8xjptFpGhu2zupsy64sgTndg',db='serverraum_temperaturueberwachung',autocommit=True)
 	cursor = db.cursor()
 	logging.info("Connected to database")
 	logging.debug(sql)
@@ -61,7 +61,7 @@ dhtprefix = systemname.split(' ')[1] + systemname.split(' ')[2]
 while True:
 	#connection stays open until an error
 	try:
-		db = pymysql.connect(host='localhost', user='webuser', password='La4R2uyME78hAfn9I1pH',db='serverraum_temperaturueberwachung',autocommit=True)
+		db = pymysql.connect(host='localhost', user='webuser', password='t5sLhtva6Ev8xjptFpGhu2zupsy64sgTndg',db='serverraum_temperaturueberwachung',autocommit=True)
 		cursor = db.cursor()
 		logging.info("Connected to database")
 	except Exception as e:

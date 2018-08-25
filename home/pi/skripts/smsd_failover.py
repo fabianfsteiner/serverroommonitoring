@@ -39,7 +39,7 @@ def send(path, file, systeme):
 
 while True:
 	try:
-		db = pymysql.connect(host='localhost', user='webuser', password='La4R2uyME78hAfn9I1pH',db='serverraum_temperaturueberwachung',autocommit=True)
+		db = pymysql.connect(host='localhost', user='webuser', password='t5sLhtva6Ev8xjptFpGhu2zupsy64sgTndg',db='serverraum_temperaturueberwachung',autocommit=True)
 		cursor = db.cursor()
 		logging.info("Connected to database")
 		sql = "select ip, name from messsystem where ip != '%s';" % (local)

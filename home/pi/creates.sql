@@ -67,11 +67,11 @@ CREATE function func_getSID(sK varchar(50))
 CREATE UNIQUE INDEX un_sensor ON sensor (sensorID, sensorKennung);  
 
 grant all on *.* TO 'webuser'@'%' 
-identified by 'La4R2uyME78hAfn9I1pH';
+identified by 't5sLhtva6Ev8xjptFpGhu2zupsy64sgTndg';
 
-CREATE USER 'webuser'@'%' IDENTIFIED BY 'La4R2uyME78hAfn9I1pH';
+CREATE USER 'webuser'@'%' IDENTIFIED BY 't5sLhtva6Ev8xjptFpGhu2zupsy64sgTndg';
 
-SET PASSWORD FOR 'webuser'@'localhost' = PASSWORD('La4R2uyME78hAfn9I1pH');
+SET PASSWORD FOR 'webuser'@'localhost' = PASSWORD('t5sLhtva6Ev8xjptFpGhu2zupsy64sgTndg');
 
 
 #drop trigger tri_messung;
