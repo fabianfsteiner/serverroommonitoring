@@ -5,7 +5,7 @@
 			(
 			  PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',
 			);
-			$dbh = new PDO('mysql:host=localhost;dbname=messages', 'webuser', 'La4R2uyME78hAfn9I1pH', $opt);
+			$dbh = new PDO('mysql:host=localhost;dbname=messages', 'webuser', 't5sLhtva6Ev8xjptFpGhu2zupsy64sgTndg', $opt);
 			$query = 'select * from message order by zeit desc limit 10;';
 			$stmt = $dbh->prepare($query);
 			$stmt->execute();

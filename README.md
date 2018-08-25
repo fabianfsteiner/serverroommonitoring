@@ -1,6 +1,7 @@
 # serverroommonitoring
 A software built to easily monitor one or more serverooms
 
+German:
 
 Halten sie folgende Files bereit:
 	- ssh keys + authorized keys - /home/pi/.ssh/
@@ -30,6 +31,8 @@ Sie die Stromversorgung an
 	
 7) Stellen Sie sicher, dass ihr System über Internetkonnektivität verfügt
 
-8) Nach dem Reboot starten Sie die install.sh
+8) Ändern Sie nun die Passwörter in allen Files (alle .py files und connect.php sowie messages.php und notifications.php)
 
-9) enjoy & feel free to change the passwords                                 
+9) Nach dem Reboot starten Sie die install.sh
+
+10) viel Spaß bei der Verwendung                                

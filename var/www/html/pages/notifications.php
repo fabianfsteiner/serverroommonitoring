@@ -24,7 +24,7 @@
 										(
 										  PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',
 										);
-										$dbh = new PDO('mysql:host=localhost;dbname=messages', 'webuser', 'La4R2uyME78hAfn9I1pH', $opt);
+										$dbh = new PDO('mysql:host=localhost;dbname=messages', 'webuser', 't5sLhtva6Ev8xjptFpGhu2zupsy64sgTndg', $opt);
 										$query = 'select * from message where typ=1 order by zeit desc;';
 										$stmt = $dbh->prepare($query);
 										$stmt->execute();
@@ -62,7 +62,7 @@
 										(
 										  PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',
 										);
-										$dbh = new PDO('mysql:host=localhost;dbname=messages', 'webuser', 'La4R2uyME78hAfn9I1pH', $opt);
+										$dbh = new PDO('mysql:host=localhost;dbname=messages', 'webuser', 't5sLhtva6Ev8xjptFpGhu2zupsy64sgTndg', $opt);
 										$query = 'select * from message where typ!=1 order by zeit desc;';
 										$stmt = $dbh->prepare($query);
 										$stmt->execute();
