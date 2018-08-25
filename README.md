@@ -9,6 +9,7 @@ German:
 
 Halten sie folgende Files bereit:
 	- download - / (ssh key zum Download)
+	- config - /root/.ssh (Konfiguration für den Download host)
 	- ssh keys + authorized keys - /home/pi/.ssh/
 	- pinconfigs - /home/pi/
 	- interfaces - /etc/network/
@@ -43,7 +44,8 @@ Sie die Stromversorgung an
 English:
 
 Prepare the following Files:
-	- download - /root/.ssh/
+	- download - / (ssh key for downloading)
+	- config - /root/.ssh (Configuration for the Download host)
 	- ssh keys + authorized keys - /home/pi/.ssh/
 	- pinconfigs - /home/pi/
 	- interfaces - /etc/network/
