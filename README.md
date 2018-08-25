@@ -1,8 +1,9 @@
 # serverroommonitoring
 A software built to easily monitor one or more serverooms
 
-(If you wish to change the passwords: 
-		all .py files, connect.php, messages.php and notifications.php include the password, also you have to change the password of the MySQL User
+If you wish to change the passwords: 
+
+all .py files, connect.php, messages.php and notifications.php include the password, also you have to change the password of the MySQL User
 
 German:
 
