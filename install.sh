@@ -3,7 +3,7 @@ systemctl enable firewalld
 systemctl start firewalld
 cd /
 git init
-git remote add origin git@github.com:fabianfsteiner/serverroommonitoring.git
+git remote add origin download:fabianfsteiner/serverroommonitoring.git
 git pull origin master
 mv /etc/usb_modeswitch.d/12d1 /etc/usb_modeswitch.d/12d1:1f01
 mkdir /var/log/smsd/
