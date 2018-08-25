@@ -1,0 +1,10 @@
+[Unit]
+Description=smsd_respond
+After=smsd.service mysql.service
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python3 /home/pi/skripts/respond.py
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,10 @@
+[Unit]
+Description=dht
+After=network.target mysql.service
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python /home/pi/skripts/readdht.py
+
+[Install]
+WantedBy=multi-user.target

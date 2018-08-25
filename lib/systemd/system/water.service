@@ -1,0 +1,10 @@
+[Unit]
+Description=water
+After=network.target mysql.service
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python3 /home/pi/skripts/readwater.py
+
+[Install]
+WantedBy=multi-user.target
