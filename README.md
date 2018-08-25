@@ -8,6 +8,7 @@ all .py files, connect.php, messages.php and notifications.php include the passw
 German:
 
 Halten sie folgende Files bereit:
+	- download - /root/.ssh/
 	- ssh keys + authorized keys - /home/pi/.ssh/
 	- pinconfigs - /home/pi/
 	- interfaces - /etc/network/
@@ -42,6 +43,7 @@ Sie die Stromversorgung an
 English:
 
 Prepare the following Files:
+	- download - /root/.ssh/
 	- ssh keys + authorized keys - /home/pi/.ssh/
 	- pinconfigs - /home/pi/
 	- interfaces - /etc/network/
