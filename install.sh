@@ -1,4 +1,4 @@
-apt update && apt upgrade -y && apt install -y apache2 mysql-server php php-mysql php-xml smstools python3-pip python3-pymysql git firewalld python3-rpi.gpio build-essential libusb-dev 
+apt update && apt upgrade -y && apt install -y apache2 mysql-server php php-mysql php-xml smstools python3-pip python3-pymysql git firewalld python3-rpi.gpio build-essential libusb-dev python-dev python-openssl python-pymysql
 systemctl enable firewalld
 systemctl start firewalld
 cd /
@@ -14,7 +14,6 @@ mkdir /var/log/dht
 mkdir /home/pi/incoming
 mkdir /home/pi/lib
 cd /home/pi/lib
-apt install python-dev python-openssl python-pymysql
 git clone https://github.com/adafruit/Adafruit_Python_DHT.git
 cd Adafruit_Python_DHT
 sudo python setup.py install
